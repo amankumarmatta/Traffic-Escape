@@ -152,7 +152,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Yellow-bar_0: 7201072549645525188
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

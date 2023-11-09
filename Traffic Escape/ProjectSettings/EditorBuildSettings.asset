@@ -26,20 +26,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 5.unity
     guid: ea3e6c3f1178fa7489f3a1152e83c426
-  - enabled: 1
-    path: Assets/Scenes/Win.unity
-    guid: b2713f761be38bf4ea4f72443880c1b5
-  - enabled: 1
-    path: Assets/Scenes/Win 1.unity
-    guid: 7fa06d2770893784b8797d4656d67233
-  - enabled: 1
-    path: Assets/Scenes/Win 2.unity
-    guid: 50bc96a4c2f286f4db3caec3ba98687c
-  - enabled: 1
-    path: Assets/Scenes/Win 3.unity
-    guid: 7157f311a5fdb26438ad7034190b38ac
-  - enabled: 1
-    path: Assets/Scenes/Win 4.unity
-    guid: 3fd4ad1f1e03a5e4cab8f8ae6c26b19d
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

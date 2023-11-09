@@ -10,14 +10,15 @@ public class GameController : MonoBehaviour
     
     private int remainingObjects;
     public GameObject winPanel;
-    public Button home, nextLevel;
+    public Button home, nextLevel, ighome;
 
     void Start()
     {
-
         winPanel.SetActive(false);
         home.onClick.AddListener(Home);
-        nextLevel.onClick.AddListener(Next);        // Initialize the count of remaining game objects to be destroyed
+        nextLevel.onClick.AddListener(Next);
+        ighome.onClick.AddListener(IgHome);
+        // Initialize the count of remaining game objects to be destroyed
         remainingObjects = gameObjects.Length;
 
         // Attach the "DestroyableObject" script to each game object in the array
@@ -38,6 +39,11 @@ public class GameController : MonoBehaviour
         GameManager.instance.LoadNextLevel();
     }
 
+    void IgHome()
+    {
+        SceneManager.LoadScene("Start Menu");
+    }
+
     // This function is called when a game object is destroyed
     public void GameObjectDestroyed()
     {
@@ -51,6 +57,7 @@ public class GameController : MonoBehaviour
 
     void LoadWinScene()
     {
+        ighome.gameObject.SetActive(false);
         winPanel.SetActive(true);
     }
 }

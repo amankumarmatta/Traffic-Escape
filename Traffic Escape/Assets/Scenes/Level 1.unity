@@ -271,7 +271,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.7686275, g: 0.9568628, b: 0.32156864, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -903,6 +903,7 @@ MonoBehaviour:
   winPanel: {fileID: 699042654788595834}
   home: {fileID: 6621938687815113256}
   nextLevel: {fileID: 273449148168880518}
+  ighome: {fileID: 7893285070275830869}
 --- !u!1 &920026205
 GameObject:
   m_ObjectHideFlags: 0
@@ -1665,6 +1666,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 1994127029563974787, guid: 707ab90da245bd0428c69b9bc6a2f09e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5861113459125794593, guid: 707ab90da245bd0428c69b9bc6a2f09e, type: 3}
       propertyPath: m_Camera
       value: 
@@ -1758,3 +1763,14 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 707ab90da245bd0428c69b9bc6a2f09e, type: 3}
+--- !u!114 &7893285070275830869 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2224329082419018674, guid: 707ab90da245bd0428c69b9bc6a2f09e, type: 3}
+  m_PrefabInstance: {fileID: 7893285070275830868}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
