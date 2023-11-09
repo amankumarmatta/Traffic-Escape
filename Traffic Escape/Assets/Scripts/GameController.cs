@@ -7,13 +7,17 @@ using UnityEngine.UI;
 public class GameController : MonoBehaviour
 {
     [SerializeField] GameObject[] gameObjects; // Array of game objects to be destroyed
-    [SerializeField] string winSceneName; // Name of the scene to load when all objects are destroyed
-
+    
     private int remainingObjects;
+    public GameObject winPanel;
+    public Button home, nextLevel;
 
     void Start()
     {
-        // Initialize the count of remaining game objects to be destroyed
+
+        winPanel.SetActive(false);
+        home.onClick.AddListener(Home);
+        nextLevel.onClick.AddListener(Next);        // Initialize the count of remaining game objects to be destroyed
         remainingObjects = gameObjects.Length;
 
         // Attach the "DestroyableObject" script to each game object in the array
@@ -22,6 +26,16 @@ public class GameController : MonoBehaviour
             gameObjects[i].AddComponent<DestroyableObject>();
             gameObjects[i].GetComponent<DestroyableObject>().gameController = this;
         }
+    }
+
+    void Home()
+    {
+        SceneManager.LoadScene("Start Menu");
+    }
+
+    void Next()
+    {
+        GameManager.instance.LoadNextLevel();
     }
 
     // This function is called when a game object is destroyed
@@ -37,8 +51,7 @@ public class GameController : MonoBehaviour
 
     void LoadWinScene()
     {
-        // Load the specified scene
-        SceneManager.LoadScene(winSceneName);
+        winPanel.SetActive(true);
     }
 }
 
